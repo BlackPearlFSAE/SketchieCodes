@@ -14,12 +14,13 @@ Here is a basic structure of sketch structure, aimed at maximum reusability:
 // What boards does the code support?
 // Why boards were used for testing code?
 // Any issues we should be aware of?
+// Are there any prerequisites required to run the code? Libraries? Setup?
 // Do you need to credit any external contributors for that part of code?
 
 // CODE
 // #pre-processors (#include and #define)
 // constants
-// interrup routines declaration (if any)
+// interrupt routines declaration (if any)
 // setup() function
 // loop() funtion
 // interrupt routines definition (if any)
@@ -39,6 +40,7 @@ pip install pyserial
 
 sudo adduser $USER dialout # one time only
 sudo chmod a+rw /dev/ttyUSB0 # on whatever TTY port you got issues with
+sudo chown username /dev/ttyUSB0 # even solid fix alternative
 ```
 
 References:
